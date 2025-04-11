@@ -1,0 +1,279 @@
+---
+title: "New file"
+description: "Description of your new file."
+---
+
+FluidCloud User Documentation
+Overview
+FluidCloud is a cutting-edge cloud modernization, teleportation, and infrastructure management platform designed to simplify cloud adoption for businesses of all sizes. The platform addresses common challenges associated with cloud teleportation, including complexity, downtime, high costs, and security risks.
+By using intelligent automation and policy-driven orchestration, FluidCloud streamlines cloud teleportation, backup, and cost optimization. It enables businesses to seamlessly shift workloads between cloud environments with minimal manual effort while maintaining security, compliance, and operational efficiency.
+This documentation provides a detailed step-by-step guide on how to set up, manage, and operate your FluidCloud account.
+
+## **Getting Started**
+
+\
+Signing Up for FluidCloud\
+To start using FluidCloud, you need to create an account. Follow these steps:
+
+<Steps>
+  <Step title="New Step">
+    Open a web browser and navigate to FluidCloud.
+  </Step>
+  <Step title="Do something here" iconType="regular">
+    
+  </Step>
+</Steps>
+
+\
+Click the Sign Up button.
+
+Enter the required details:
+Full Name: Your official name as it appears in company records.
+Email Address: Use a valid email to receive account verification.
+Password: Create a strong password that includes uppercase and lowercase letters, numbers, and symbols.
+Company Name: Optional but recommended for enterprise users.
+Click Sign Up to submit your details.
+Check your email inbox for a verification code sent by FluidCloud.
+Enter the verification code on the website to verify your email.
+
+Once verified, you will be redirected to the login page.
+Enter your registered email and password, then click Login to access your FluidCloud dashboard.
+
+Accounts Dashboard Overview
+Once logged in, the Accounts Dashboard provides a consolidated view of all your connected cloud accounts. FluidCloud currently supports integration with the following cloud providers:
+Amazon Web Services (AWS)
+Microsoft Azure
+Google Cloud Platform (GCP)
+Each account added to FluidCloud is displayed with key details such as provider name, account ID, status, and region.
+
+Adding Cloud Accounts
+To utilize FluidCloud’s services, you need to onboard your cloud accounts.
+
+Steps to Add a Cloud Account
+Navigate to the Accounts Dashboard.
+Click the \+ Add Account button, located either at the center of the page or in the top-right corner.
+Select the cloud provider you wish to add.
+
+AWS Account Onboarding
+Account Name: Assign a custom name for easy reference.
+Account ID: Provide your unique 12-digit AWS Account Number.
+Access Key & Secret Key: Enter IAM credentials for authentication.
+Region: Select the preferred AWS region for deployments.
+
+Azure Account Onboarding
+Account Name: Assign a custom reference name.
+Subscription ID: Enter your unique Azure Subscription ID.
+Tenant ID: Provide the Azure Directory Tenant ID.
+Client ID & Secret: Input the authentication credentials for programmatic access.
+Region: Choose a data center location within Azure.
+
+GCP Account Onboarding
+Account Name: Assign a custom reference name.
+Project ID: Enter the unique Google Cloud project identifier.
+Organization ID: Provide the organization ID associated with your GCP account.
+Billing Account ID: Input the billing account used for cloud expenses.
+Service JSON: Upload the authentication credentials file from Google IAM.
+Region: Choose the region where your cloud resources will reside.
+
+Exploring the Account Details Page
+Each onboarded account provides a detailed view with multiple tabs for managing cloud resources. Key sections include:
+Account Overview
+Each cloud account has a detailed Overview Page displaying:
+Resource allocation and utilization.
+Cost analysis and optimization insights.
+Security & compliance posture.
+
+Backup Management
+Automated Backups: All accounts come with a default backup configuration.
+
+Custom Schedules: Users can modify backup frequencies from every 5 minutes to once a week.
+Cron-based Scheduler: Backup jobs run based on standard cron scheduling patterns.
+Supported Services: FluidCloud supports backup for compute, storage, networking, and IAM services.
+
+Migration & Cloud Optimization
+Infrastructure Analysis: The migration tool helps analyze existing cloud infrastructure.
+Cost Estimation: Get a breakdown of expected costs across different providers.
+Cross-Cloud Migration: Compare configurations and migrate workloads to another cloud provider seamlessly.
+
+Multi-Region Deployments: Move workloads between regions for cost and performance optimization.
+Draft Migrations: Save potential migration configurations before execution.
+
+Migration Execution: When ready, click Launch Migration to deploy converted infrastructure.
+
+Migration Logs
+Real-Time Visibility: Track every stage of the migration process.
+Audit Trail: Maintain logs for debugging and compliance reporting.
+
+Supported Services & Features
+Cloud Scanning & Security Assessment
+FluidCloud provides in-depth scanning capabilities across major cloud platforms:
+AWS: Supports 20\+ services following is the list of supported services:
+Aws EC2 Instance
+Aws AMI
+Aws VPC
+Aws Security Group
+Aws Subnets
+Aws Identity and Access Management
+Aws RDS
+Aws S3
+Aws Cloudwatch
+Aws Key Management Service (KMS)
+Aws Kinesis
+Aws Autoscaling Groups
+Aws Elastic Block Storage
+Aws Elastic Container Registry
+Aws Elastic Container Service
+Aws Elastic File System
+Aws Elastic Container Service
+Aws Elastic Kubernetes Service
+Aws Load Balancers
+Aws Nat Gateway
+Aws Neptune
+Aws Redshift
+Aws Glue
+Aws Athena
+Aws EMR
+Aws Quicksight
+Aws DynamoDB
+Aws Lakeformation
+
+Azure: Supports 12\+ services following is the list of supported services:
+Azure Linux and Windows Virtual Machines
+Azure Virtual Networks
+Azure Subnets
+Azure Network Security Groups
+Azure CosmosDB
+Azure Key Vaults
+Azure Load Balancers
+Azure Application Gateway
+Azure Monitor Diagnostic Settings
+Azure Databases (Postgres, MySQL, MSSQL)
+Azure Storage Accounts
+Azure Active Directory (AD)
+
+GCP Supports 4\+ services following is the list of supported services:
+Google Compute Instances
+Google Compute Networks
+Google Compute Subnetworks
+Google Compute Firewalls
+
+Cost Optimization
+FluidCloud offers cost estimation and resource optimization:
+AWS: EC2, RDS, and DynamoDB pricing breakdowns.
+Azure: Linux and Windows Virtual Machine cost analysis.
+GCP: Compute Instance cost assessment.
+Conversion Support:
+AWS - GCP:
+Aws EC2 Instance -\> Google Compute Instances
+Aws VPC -\> Google Compute Networks
+Aws Security Group -\> Google Compute Firewalls
+Aws Subnets -\> Google Compute Subnetworks
+Amazon RDS Cluster & Cluster Instance → Cloud SQL Instance
+Amazon SNS Topic → Pub/Sub Topic
+Amazon VPC Subnet → Google Compute Subnetwork
+Amazon EC2 Instance → Google Compute Instance
+AWS IAM User → Google Service Account
+AWS IAM User Policy & Role Policy → IAM Member / Custom IAM Role
+AWS IAM Access Key → Service Account Key
+AWS Security Group → Google Compute Firewall
+Amazon VPC → Google Compute Network
+AWS KMS Key → Cloud KMS Key Ring / Cloud KMS Crypto Key
+Amazon S3 Bucket (Including Encryption, ACL, Acceleration, Logging, Versioning, and Policy) → Cloud Storage Bucket
+
+AWS - Azure:
+Aws EC2 Instance -\>  Azure Linux and Windows Virtual Machines
+Aws VPC -\> Azure Virtual Networks
+Aws Security Group -\> Azure Network Security Groups
+Aws Subnets -\> Azure Subnets
+
+Azure - AWS:
+Azure Linux and Windows Virtual Machines -\> AWS EC2 Instance
+Azure Virtual Networks -\> AWS VPC
+Azure Network Security Groups -\> AWS Security Group
+Azure Subnets -\> AWS Subnets
+
+Permissions Requirements:
+
+Google Cloud:
+
+1. The following permissions are required by FluidCloud for your service account for creating resources as part of migration:
+   Cloud quotas admin, Quota Administrator: FluidCloud migrations may require you to create more resources per project/region than the default quotas of the cloud account. Hence, kindly note the quotas before and make sure the right quotas are set before starting a migration or backup.
+   Project Billing Manager:
+   Project Mover/ Project Creator: Require to create a new project as part of migration
+   Project IAM Admin
+   Cloud Asset Viewer: Required to view and monitor the created assets.
+   Service Usage Admin: Required to enable the required cloud billing API’s
+   Create Service Accounts: To create the service account required for FluidCloud Account onboarding
+2. Here is a list of permissions required for backing up services currently supported:
+
+- Compute Instances: Compute Instance Admin (v1)
+- Compute Network, Subnetworks and Firewalls: Compute Network Viewer, Firewall Recommender Viewer
+
+Note: It is recommended that all the necessary cloud permissions are assigned to the service account added as part of FluidCloud account onboarding.
+
+AWS:
+
+1. Required: Access Key and Secret Key created for the IAM User in the source / target AWS Cloud Account .When deploying / migrating to AWS from other clouds / from one region in AWS to another, the following permissions are required by FluidCloud for your user:
+   The list of services supported by FluidCloud as part of migration require the following permissions:
+   EC2 Instances: AmazonEC2FullAccess
+   VPC ,Subnets, Security Groups and Network Interfaces: AmazonVPCFullAccess,
+2. Please follow the services you want to backup, and provide the necessary List / Get / Describe permissions. Example would be for S3 Backup when selecting AWS Account as a source, the required permission attached to the user whose Access key and Secret Key are provided during account on boarding would be AmazonS3ReadOnlyAccess. Similarly make sure to provide read accesses for each service you want to back up.
+
+AZURE:\
+Required: For Azure account onboarding, a new app registration needs to be created, with details required:
+TenantID, SubscriptionID, ClientID and ClientSecret.
+
+Once an app registration is created you need to assign the necessary read permissions as follows for backing up your azure account:
+Virtual Machines: Microsoft.Compute/virtualMachines/read
+Virtual Networks: Microsoft.Network/virtualNetworks/read
+Subnets: Microsoft.Network/virtualNetworks/subnets/read
+Network Security Groups: Microsoft.Network/networkSecurityGroups/read
+Network Interfaces: Microsoft.Network/networkInterfaces/read
+PublicIPAddresses: Microsoft.Network/publicIPAddresses/read
+
+For Azure account onboarding, a new app registration needs to be created, with details required for migrating resources from other cloud accounts to Azure / from one region in Azure to another:
+Virtual Machines: Microsoft.Compute/virtualMachines/write
+Virtual Networks: Microsoft.Network/virtualNetworks/write
+Subnets: Microsoft.Network/virtualNetworks/subnets/write
+Network Security Groups: Microsoft.Network/networkSecurityGroups/write
+Network Interfaces: Microsoft.Network/networkInterfaces/write
+PublicIPAddresses: Microsoft.Network/publicIPAddresses/write
+Note: When onboarding the Azure Account, note that the location required is for resource groups, meaning all resource groups and the resources in those resource groups in that region / location will be backed up or selected for migration. This happens regardless of the actual location of the resources in those resource groups for the purpose of data and infrastructure consistency.
+
+Database  Migration
+Navigate to Migrations dashboard
+Click on \+ New Migration button
+
+Give a friendly name of your choice
+Select Data as the migration type and click Configure Source
+
+Select source Database Engine from the given options
+
+You can choose from the list of previously added database hosts or connect to a new DB host by clicking on \+ button
+
+Host: Database endpoint or the hostname of the database instance
+Database: Database name inside the DB instance
+Port: Listening port of the DB instance
+Username & Password: User credentials to authenticate and establish active connection to the DB instance
+Follow the same steps 5 through 10 for target database engine. User has a freedom to select a different database engine from the source or not.
+
+Go ahead and create a database migration, a draft migration gets created and you are redirected to the Migrations Dashboard
+Migration details page of a migration type Data will show visual representation of all the discovered tables and records in them with a small details of schema of table and the records and other useful information
+
+When Launch Migration is triggered, the source database tables, indexes and all the relevant information get replicated on the target database.
+
+Troubleshooting & Support
+Common Issues & Fixes
+Authentication Errors: Ensure API credentials are correct and active.
+Slow Migrations: Large datasets can take longer; consider migrating in smaller batches.
+Contacting Support
+For assistance, reach out via:
+Help Center: Available within the FluidCloud dashboard.
+Email: [support@fluidcloud.com](mailto:support@fluidcloud.com).
+
+Frequently Asked Questions (FAQs)
+How long does migration take?
+The duration depends on data size and complexity. The dashboard provides live updates.
+Can I migrate between different cloud providers?
+Yes, FluidCloud fully supports AWS, Azure, and GCP migrations.
+This document serves as a comprehensive user manual for leveraging FluidCloud’s cloud modernization and migration capabilities. For more details, visit the Help Center or contact our support team.
